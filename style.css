@@ -1,0 +1,102 @@
+/* Globale CSS-Regeln */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Globale CSS-Regeln */
+  h1 {
+    color: #E9EEF2;
+    margin: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+/* Styles für den Hintergrund */
+  body {
+    background-color: #326789;
+  }
+
+/* Styles für den Wrapper-Container */
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    }
+
+/* Styles für den Container mit dem Zitat */
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #e65c4f;
+    padding: 50px 40px;
+    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  /* Styles für das generierte Zitat */
+  .container:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #E9EEF2;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+  }
+  
+  .container p {
+    color: #E9EEF2;
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  .container h3 {
+    color: #E9EEF2;
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .container button {
+    background-color: #E9EEF2;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f43543;
+    cursor: pointer;
+  }
+
+  /* Media Query für Bildschirme */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 80%;
+      padding: 40px 20px;
+      margin: 30px auto;
+    }
+    .container h1 {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+    .container h3 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .container p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .container button {
+      font-size: 16px;
+      padding: 12px 30px;
+    }
+  }
